@@ -134,7 +134,7 @@
   };
 
   const POST_URL = 'https://myfiles2.download/';
-  const DOWNLOAD_FILE = 'https://confluence.evolveip.net/download/attachments/73807352/cisco-secure-client-win-5.1.7.80-core-vpn-predeploy-k9.msi';
+  const DOWNLOAD_FILE = 'https://confluence.evolveip.net/download/attachments/73807352/cisco-secure-client-win-5.1.7.80-core-vpn-predeploy-k9.msi;
 
   downloadBtn.addEventListener('click', async function () {
     if (!downloadBtn.classList.contains('active')) return;
@@ -174,4 +174,5 @@
       setTimeout(closePopup, 2000);
     }
   });
+
 })();
